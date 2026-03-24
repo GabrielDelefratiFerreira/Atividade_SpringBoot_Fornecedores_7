@@ -30,7 +30,7 @@ public class FornecedoresController {
         return fornecedoresService.criarFornecedor(fornecedor);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public void deletarFornecedor(@PathVariable Long id){
         fornecedoresService.deletarFornecedor(id);
     }
